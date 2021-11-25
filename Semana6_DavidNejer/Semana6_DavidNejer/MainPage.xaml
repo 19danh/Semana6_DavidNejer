@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana6_DavidNejer.MainPage">
+
+    <StackLayout>
+        <Label Text="Cosumir Web serivice GET" FontSize="20" HorizontalTextAlignment="Center"/>
+        <Label x:Name="texto" Text=""/>
+        <Button Text="INSERTAR" x:Name="btnPost" Clicked="btnPost_Clicked"/>
+        <Button Text="ACTUALIZAR" x:Name="btnActualizar" Clicked="btnActualizar_Clicked"/>
+        <Button Text="ELIMINAR" x:Name="btnDelete" Clicked="btnDelete_Clicked"/>
+        <ListView x:Name="MyListView" ItemSelected="MyListView_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label x:Name="lblNombre" Text="{Binding nombre}"/>
+                            <Label x:Name="lblApellido" Text="{Binding apellido}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+    </StackLayout>
+
+</ContentPage>

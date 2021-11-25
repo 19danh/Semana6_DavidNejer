@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana6_DavidNejer.Eliminar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="Resultado" HorizontalOptions="Center" FontSize="Large"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnAceptar" Text="ACEPTAR" Clicked="btnAceptar_Clicked" Grid.Row="0" Grid.Column="0" />
+                <Button x:Name="btnCancelar" Text="CANCELAR" Clicked="btnCancelar_Clicked" Grid.Row="0" Grid.Column="1" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

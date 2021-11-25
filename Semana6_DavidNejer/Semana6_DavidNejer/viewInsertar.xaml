@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana6_DavidNejer.viewInsertar"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana de Ingreso de Datos" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="txtCodigo" Placeholder="Ingrese el código" Keyboard="Numeric"/>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre"/>
+            <Entry x:Name="txtApellido" Placeholder ="Ingrese el apellido"/>
+            <Entry x:Name="txtEdad" Placeholder="Ingrese la edad" Keyboard="Numeric"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnIngresar" Text="Ingresar" Clicked="btnIngresar_Clicked" Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="btnSalir" Text="Regresar" Clicked="btnSalir_Clicked" Grid.Row="0" Grid.Column="1"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
